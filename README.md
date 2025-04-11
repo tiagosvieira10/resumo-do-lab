@@ -1,27 +1,48 @@
-# Resumo de Introdução à Computação em Nuvem
+# Como Criar uma Máquina Virtual na Azure
 
-O curso apresentou os fundamentos da computação em nuvem, abordando seus conceitos, modelos de serviço (IaaS, PaaS, SaaS) e modelos de implantação (nuvem pública, privada e híbrida). Além disso, foram discutidas as principais vantagens da nuvem em relação a infraestruturas tradicionais.
+Este guia resume o processo de criação de uma **Máquina Virtual (VM)** na plataforma Microsoft Azure, com foco em iniciantes.
 
-## 🧠 Conteúdo Aprendido
+## 🛠️ Passo a Passo
 
-- **Conceitos básicos de Computação em Nuvem**
-  - O que é cloud computing
-  - Vantagens em relação à infraestrutura local
-- **Modelos de Serviço**
-  - IaaS (Infrastructure as a Service)
-  - PaaS (Platform as a Service)
-  - SaaS (Software as a Service)
-  - Nuvem Pública
-  - Nuvem Privada
-  - Nuvem Híbrida
-  - Diferença entre despesas de capital (CapEx) e operacionais (OpEx)
-  - Como a nuvem transforma investimentos em infraestrutura em custos flexíveis
-  - Criação de conta gratuita
-  - Exploração do portal Azure
-  - Introdução aos serviços e recursos disponíveis
+### 1. Acessar o Portal Azure
+- Acesse o portal da Azure
+- Faça login
 
-## ☁️ Plataforma Abordada
+### 2. Criar um Novo Recurso
+- No menu lateral, clique em **"Criar um recurso"**
+- Em seguida, selecione **"Máquina Virtual"**
 
-- **Microsoft Azure**
-  - Demonstração prática no portal
-  - Navegação pelos serviços principais
+### 3. Configurar a VM
+- **Assinatura**: escolha a conta que será usada para cobrança
+- **Grupo de Recursos**: crie um novo ou use um existente
+- **Nome da VM**: defina um nome amigável
+- **Região**: escolha a localização do data center (ex: "Brazil South")
+- **Imagem**: escolha o sistema operacional (ex: Windows 11, Ubuntu 22.04)
+- **Tamanho**: selecione o tipo de máquina (ex: B1s, D2s_v3, etc.)
+- **Usuário e senha/SSH**: defina as credenciais de acesso
+
+### 4. Configurar Regras de Acesso (Rede)
+- Permita o tráfego necessário, como:
+  - **RDP** (porta 3389) para Windows
+  - **SSH** (porta 22) para Linux
+- Opcional: configurar grupo de segurança de rede (NSG)
+
+### 5. Revisar e Criar
+- Revise todas as configurações
+- Clique em **"Criar"** e aguarde a implantação da máquina virtual
+
+### 6. Acessar a VM
+- Após criada, vá em **"Máquinas Virtuais" > [nome da sua VM]**
+- Clique em **"Conectar"**
+  - Para Windows: via RDP
+  - Para Linux: via SSH
+
+---
+
+## 📌 Dicas
+- Utilize o plano gratuito se estiver começando
+- Lembre-se de parar ou excluir a VM quando não estiver em uso para evitar cobranças
+- É possível automatizar esse processo com scripts usando **Azure CLI** ou **ARM templates**
+
+ 
+  
