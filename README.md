@@ -1,27 +1,12 @@
-# Resumo de Introdução à Computação em Nuvem
+# Construindo Arquitetura no Azure
 
-O curso apresentou os fundamentos da computação em nuvem, abordando seus conceitos, modelos de serviço (IaaS, PaaS, SaaS) e modelos de implantação (nuvem pública, privada e híbrida). Além disso, foram discutidas as principais vantagens da nuvem em relação a infraestruturas tradicionais.
+Este resumo tem como objetivo registrar os principais conceitos aprendidos sobre como planejar, estruturar e implementar arquiteturas de soluções na Microsoft Azure. O foco foi entender boas práticas, componentes fundamentais e decisões técnicas envolvidas na construção de ambientes seguros, escaláveis e eficientes na nuvem.
 
-## 🧠 Conteúdo Aprendido
+## Conceitos Fundamentais
 
-- **Conceitos básicos de Computação em Nuvem**
-  - O que é cloud computing
-  - Vantagens em relação à infraestrutura local
-- **Modelos de Serviço**
-  - IaaS (Infrastructure as a Service)
-  - PaaS (Platform as a Service)
-  - SaaS (Software as a Service)
-  - Nuvem Pública
-  - Nuvem Privada
-  - Nuvem Híbrida
-  - Diferença entre despesas de capital (CapEx) e operacionais (OpEx)
-  - Como a nuvem transforma investimentos em infraestrutura em custos flexíveis
-  - Criação de conta gratuita
-  - Exploração do portal Azure
-  - Introdução aos serviços e recursos disponíveis
-
-## ☁️ Plataforma Abordada
-
-- **Microsoft Azure**
-  - Demonstração prática no portal
-  - Navegação pelos serviços principais
+### 1. Princípios de Arquitetura em Nuvem
+- **Alta disponibilidade**: garantir funcionamento contínuo da aplicação mesmo diante de falhas
+- **Escalabilidade**: ajustar recursos automaticamente conforme a demanda (horizontal e vertical)
+- **Resiliência**: capacidade de se recuperar de falhas rapidamente
+- **Segurança**: aplicação de boas práticas de proteção de dados e acesso
+- **Desempenho e Eficiência**
